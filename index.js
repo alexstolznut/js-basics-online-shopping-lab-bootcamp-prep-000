@@ -89,9 +89,11 @@ function removeFromCart(item) {
   console.log(cart.includes(item));
   if(array.indexOf(item)===-1){
     return console.log('That item is not in your cart.')
-  }
+  } else {
 
   cart.splice(cart.indexOf(item));
+  return cart;
+}
     // for(var i = 0; i < cart.length; i = i + 1){
     //    // console.log(cart.indexOf(getCart()[i][item]));
     //    let newItem = getCart()[i];
@@ -104,7 +106,7 @@ function removeFromCart(item) {
 
 
 
-  return getCart();
+
 
 }
 
