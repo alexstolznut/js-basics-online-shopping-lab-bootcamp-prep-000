@@ -47,7 +47,7 @@ function viewCart() {
         let price = Object.values(object[i]);
         string+=`${name} at $${price}, `
       }
-      const string += `and ${Object.keys(object[object.length])} at $${Object.values(object[object.length])}.`
+      string += `and ${Object.keys(object[object.length])} at $${Object.values(object[object.length])}.`
       console.log(string);
       return;
     }
