@@ -111,7 +111,7 @@ function removeFromCart(item) {
 
 
 
-  return cart;
+  return console.log(cart);
 }
 
 function placeOrder(cardNumber) {
