@@ -80,8 +80,8 @@ function total() {
 
 
 function removeFromCart(item) {
-
-  cart.splice(item);
+  const index = cart.indexOf(item)
+  cart.splice(index);
   return getCart();
 }
 
