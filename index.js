@@ -87,7 +87,7 @@ function removeFromCart(item) {
   const index = cart.indexOf(item);
   if(index === -1) {
     return console.log("This item is not in your cart.");
-  } else {}\
+  } else {
 
     for(var i = 0; i < cart.length; i = i + 1){
       // console.log(cart.indexOf(getCart()[i][item]));
