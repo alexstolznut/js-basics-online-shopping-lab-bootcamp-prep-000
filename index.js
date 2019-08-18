@@ -83,7 +83,7 @@ function removeFromCart(item) {
   const array = Object.values(cart);
   // console.log('Test', Object.keys(array));
   for(var j = 0; j < array.length; j = j + 1){
-    console.log('test' cart.indexOf(array[j]));
+    console.log('test', array[j]);
   }
   let found = false;
   for(var i = 0; i < cart.length; i = i + 1){
