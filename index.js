@@ -90,5 +90,6 @@ function placeOrder(cardNumber) {
 
 addToCart('Apple');
 addToCart('banana');
+addToCart('oranges');
 viewCart();
 total();
