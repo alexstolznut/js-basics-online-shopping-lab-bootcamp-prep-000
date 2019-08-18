@@ -88,7 +88,7 @@ function removeFromCart(item) {
     for(var i = 0; i < cart.length; i = i + 1){
       // console.log(cart.indexOf(getCart()[i][item]));
       let newItem = getCart()[i];
-      console.log(cart.indexOf(newItem));
+      console.log(newItem);
       if(Object.keys(newItem).toString() === item) {
         cart.splice(cart.indexOf(newItem));
         // found = true;
@@ -108,7 +108,7 @@ function removeFromCart(item) {
 
 
 
-}
+
 
 function placeOrder(cardNumber) {
   // write your code here
