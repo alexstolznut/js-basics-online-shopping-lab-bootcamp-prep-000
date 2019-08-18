@@ -87,6 +87,8 @@ function removeFromCart(item) {
     if(Object.keys(newItem).toString() === item) {
 
       console.log(cart.indexOf(newItem));
+      cart.splice(cart.indexOf(newItem));
+      
     }
   }
 
