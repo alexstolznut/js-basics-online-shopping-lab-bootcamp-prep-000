@@ -32,7 +32,14 @@ function viewCart() {
       return;
     }
     if(cart.length === 2) {
-      console.log(`In your cart, you have ${Object.keys(getCart()[0])} at ${Object.values(getCart()[0])} and ${Object.keys(getCart()[1])} at ${Object.values(getCart()[1])}.`)
+      let string = 'In your cart, you have '
+      for(var i = 0; i < cart.length - 1; i = i + 1){
+        let name = Object.keys(getCart()[i]);
+        let price = Object.values(getCart()[i])
+        string+=`${name} at ${price}`;
+      }
+      string += `, and ${Object.keys(getCart()[cart.length])} at ${Object.values(getCart()[cart.length])}.`
+      console.log(string);
       return;
     }
     // } else {
