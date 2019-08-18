@@ -43,7 +43,9 @@ function viewCart() {
     if(object.length > 2) {
       let string = 'In your cart, you have';
       for(var i = 0; i < cart.length - 1; i = i + 1){
-        string+=`${Object.keys(object[i])} at $${Object.values(object[i])}, `
+        let name = Object.keys(object[i]);
+        let price = Object.values(object[i]);
+        string+=`${name} at $${price}, `
       }
       const string += `and ${Object.keys(object[object.length])} at $${Object.values(object[object.length])}.`
       console.log(string);
