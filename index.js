@@ -85,7 +85,7 @@ function removeFromCart(item) {
     array.push(Object.keys(cart[j]));
   }
 
-  console.log(array.find(item));
+  console.log(array.includes(item));
 
 
 
