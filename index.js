@@ -92,6 +92,7 @@ function removeFromCart(item) {
 
   return cart;
 }
+}
 
 function placeOrder(cardNumber) {
   // write your code here
@@ -102,4 +103,3 @@ addToCart('banana');
 addToCart('oranges');
 viewCart();
 total();
-removeFromCart('oranges');
