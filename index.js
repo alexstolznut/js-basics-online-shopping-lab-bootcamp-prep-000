@@ -83,11 +83,12 @@ function removeFromCart(item) {
 
   for(var i = 0; i < cart.length; i = 0){
     let newItem = getCart()[i][item];
+    console.log(newItem);
     if(Object.keys(cart[i])===item){
       cart.splice(indexOf(item));
     }
   }
-}
+
 
 
   return console.log(getCart());
