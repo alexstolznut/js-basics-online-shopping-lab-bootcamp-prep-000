@@ -80,19 +80,12 @@ function total() {
 
 
 function removeFromCart(item) {
-  // let found = false
-  // // console.log('Test', Object.keys(array));
-  //
+  console.log(cart.join());
   const array = Object.assign(cart);
   for(var j = 0; j < array.length; j = j + 1){
-     if(array[j][item]) {
-       console.log('item available');
-       found = true;
-     }
+     console.log(array[j][item]);
   }
-  if(found !==true) {
-    return console.log('That item is not in your cart.');
-  }
+
 
 
 
