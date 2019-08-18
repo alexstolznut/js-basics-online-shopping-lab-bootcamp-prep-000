@@ -94,7 +94,7 @@ function removeFromCart(item) {
     }
   }
   if(found === false) {
-    console.log('item not in cart');
+    return console.log('That item is not in cart');
   }
 
 
