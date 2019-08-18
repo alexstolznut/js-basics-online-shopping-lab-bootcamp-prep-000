@@ -42,6 +42,12 @@ function viewCart() {
     }
     if(object.length > 2) {
       let string = 'In your cart, you have';
+      for(var i = 0; i < cart.length - 1; i = i + 1){
+        string+=`${Object.keys(object[i])} at $${Object.values(object[i])}, `
+      }
+      const string += `and ${Object.keys(object[object.length])} at $${Object.values(object[object.length])}.`
+      console.log(string);
+      return;
     }
     // } else {
     //   let string = 'In your cart, ';
