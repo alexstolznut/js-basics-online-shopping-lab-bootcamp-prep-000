@@ -81,10 +81,10 @@ function total() {
 
 function removeFromCart(item) {
   const array = Object.values(cart);
-  console.log('Test', Object.keys(array[0]));
-  // for(var j = 0; j < array.length; j = j + 1){
-  //   console.log('test', cart.indexOf(array[i]), array[i]);
-  // }
+  // console.log('Test', Object.keys(array));
+  for(var j = 0; j < array.length; j = j + 1){
+    console.log('test',array[i]);
+  }
   let found = false;
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
