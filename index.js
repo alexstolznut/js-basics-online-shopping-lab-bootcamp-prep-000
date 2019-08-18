@@ -84,7 +84,7 @@ function removeFromCart(item) {
   for(var j = 0; j < cart.length; j = j + 1){
     array.push(Object.keys(cart[j]).toString());
   }
-  console.log(array);
+  console.log(array.includes(item));
 
 
 
