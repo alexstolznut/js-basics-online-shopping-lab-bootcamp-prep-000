@@ -80,7 +80,7 @@ function total() {
 
 
 function removeFromCart(item) {
-  console.log(cart.keys());
+  console.log(cart.includes(item));
   if(cart.indexOf(item)===-1){
     return console.log('That item is not in your cart.')
   } else{
