@@ -75,7 +75,7 @@ function total() {
   for(var i = 0; i < cart.length; i = i + 1) {
     total += parseInt(Object.values(cart[i]));
   }
-  return console.log(total);
+  return total;
 }
 
 
