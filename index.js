@@ -80,7 +80,8 @@ function total() {
 
 
 function removeFromCart(item) {
-  console.log(cart.includes(item));
+  const object = Object.assign(cart);
+  console.log(object);
 
 
 
