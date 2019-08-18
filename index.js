@@ -94,3 +94,4 @@ addToCart('banana');
 addToCart('oranges');
 viewCart();
 total();
+removeFromCart('oranges');
