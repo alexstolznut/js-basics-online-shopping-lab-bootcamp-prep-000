@@ -80,13 +80,17 @@ function total() {
 
 
 function removeFromCart(item) {
-
+  if(cart.indexOf(item)===-1){
+    return console.log('That item is not in your cart.')
+  } else {
   for(var i = 0; i < cart.length; i = 0){
-    if(Object.key(cart[i])===item){
+    if(Object.keys(cart[i])===item){
       cart[i].splice();
     }
   }
-  
+}
+
+
   return console.log(getCart());
 }
 
