@@ -80,19 +80,19 @@ function total() {
 
 
 function removeFromCart(item) {
-  let found = false
-  // console.log('Test', Object.keys(array));
-  console.log(cart.indexOf(item));
-  const array = Object.values(cart);
-  for(var j = 0; j < array.length; j = j + 1){
-     if(item === Object.keys(array[j]).toString()) {
-       console.log('item available');
-       found = true;
-     }
-  }
-  if(found !==true) {
-    return console.log('That item is not in your cart.');
-  }
+  // let found = false
+  // // console.log('Test', Object.keys(array));
+  //
+  // const array = Object.values(cart);
+  // for(var j = 0; j < array.length; j = j + 1){
+  //    if(item === Object.keys(array[j]).toString()) {
+  //      console.log('item available');
+  //      found = true;
+  //    }
+  // }
+  // if(found !==true) {
+  //   return console.log('That item is not in your cart.');
+  // }
 
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
@@ -102,7 +102,7 @@ function removeFromCart(item) {
 
       console.log(cart.indexOf(newItem));
       cart.splice(cart.indexOf(newItem));
-      found = true;
+      // found = true;
 
     }
   }
