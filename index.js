@@ -80,11 +80,13 @@ function total() {
 
 
 function removeFromCart(item) {
-  const array = Object.values(cart);
+  let found = false
   // console.log('Test', Object.keys(array));
+  const array = Object.values(cart);
   for(var j = 0; j < array.length; j = j + 1){
      if(item === Object.keys(array[j]).toString()) {
        console.log('item available');
+       
      }
   }
   let found = false;
