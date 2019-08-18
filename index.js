@@ -83,11 +83,16 @@ function removeFromCart(item) {
   if(cart.indexOf(item)===-1){
     return console.log('That item is not in your cart.')
   } else{
-  for(var i = 0; i < cart.length; i = 0){
-    if(Object.keys(cart[i])===item){
-      cart[i].splice();
-    }
-  }
+    for(var i = 0; i < cart.length; i = i + 1){
+       // console.log(cart.indexOf(getCart()[i][item]));
+       let newItem = getCart()[i];
+       console.log(newItem[item]);
+       if(Object.keys(newItem).toString() === item) {
+         cart.splice(cart.indexOf(newItem));
+         // found = true;
+
+       }
+     }
 
 
   return cart;
