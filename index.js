@@ -80,40 +80,18 @@ function total() {
 
 
 function removeFromCart(item) {
-  const array = []
-  for(var j = 0; j < cart.length; j = j + 1){
-    array.push(Object.keys(cart[j]).toString());
-  }
-  const index = cart.indexOf(item);
-  if(index === -1) {
-    return console.log("This item is not in your cart.");
-  } 
-
-    for(var i = 0; i < cart.length; i = i + 1){
-      // console.log(cart.indexOf(getCart()[i][item]));
-      let newItem = getCart()[i];
-      console.log(newItem[item]);
-      if(Object.keys(newItem).toString() === item) {
-        cart.splice(cart.indexOf(newItem));
-        // found = true;
-
-      }
+  if(cart.indexOf(item)===-1){
+    return console.log('That item is not in your cart.')
+  } else{
+  for(var i = 0; i < cart.length; i = 0){
+    if(Object.keys(cart[i])===item){
+      cart[i].splice();
     }
-    return console.log(cart);
-
-
   }
 
 
-
-
-
-
-
-
-
-
-
+  return cart;
+}
 
 function placeOrder(cardNumber) {
   // write your code here
