@@ -80,17 +80,21 @@ function total() {
 
 
 function removeFromCart(item) {
-  console.log('test', Object.keys(getCart()[item]);
+  let found = false;
   for(var i = 0; i < cart.length; i = i + 1){
-
+    console.log('test', Object.keys(getCart()[i][item]));
     let newItem = getCart()[i];
     console.log(Object.keys(newItem).toString(), item);
     if(Object.keys(newItem).toString() === item) {
 
       console.log(cart.indexOf(newItem));
       cart.splice(cart.indexOf(newItem));
+      found = true;
 
     }
+  }
+  if(found === false) {
+    console.log('item not in cart');
   }
 
 
