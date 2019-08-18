@@ -95,7 +95,7 @@ function removeFromCart(item) {
   // }
 
   for(var j = 0; j < cart.length; j = j + 1){
-  console.log(cart.map(cart=>cart))
+  console.log(cart.map(cart=>cart===item))
 }
 
   for(var i = 0; i < cart.length; i = i + 1){
