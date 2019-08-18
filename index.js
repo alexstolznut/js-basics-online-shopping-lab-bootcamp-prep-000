@@ -86,7 +86,7 @@ function removeFromCart(item) {
   for(var j = 0; j < array.length; j = j + 1){
      if(item === Object.keys(array[j]).toString()) {
        console.log('item available');
-       
+
      }
   }
   let found = false;
