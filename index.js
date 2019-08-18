@@ -86,10 +86,10 @@ function removeFromCart(item) {
   for(var j = 0; j < array.length; j = j + 1){
      if(item === Object.keys(array[j]).toString()) {
        console.log('item available');
-
+       found = true;
      }
   }
-  let found = false;
+
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
     let newItem = getCart()[i];
