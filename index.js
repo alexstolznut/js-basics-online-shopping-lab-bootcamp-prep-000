@@ -81,7 +81,7 @@ function total() {
 
 function removeFromCart(item) {
   const object = Object.assign(cart);
-  console.log(cart[0].entries());
+  console.log(cart.find(item));
 
 
 
