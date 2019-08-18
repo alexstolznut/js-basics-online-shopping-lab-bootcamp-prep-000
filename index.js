@@ -37,8 +37,11 @@ function viewCart() {
       const name2 = Object.keys(object[1]);
       const price1 = Object.values(object[0]);
       const price2 = Object.values(object[1]);
-      console.log(`In your cart, you have ${name1} at $${price1}, and ${name2} at $${price2}.`)
+      console.log(`In your cart, you have ${name1} at $${price1} and ${name2} at $${price2}.`)
       return;
+    }
+    if(object.length > 2) {
+      let string = 'In your cart, you have';
     }
     // } else {
     //   let string = 'In your cart, ';
