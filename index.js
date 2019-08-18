@@ -84,26 +84,33 @@ function removeFromCart(item) {
   for(var j = 0; j < cart.length; j = j + 1){
     array.push(Object.keys(cart[j]).toString());
   }
-  console.log(array.includes(item));
 
 
+  if(!array.includes(item)){
+    return console.log('This item is not in your cart');
+  } else {
+    for(var i = 0; i < cart.length; i = i + 1){
+      // console.log(cart.indexOf(getCart()[i][item]));
+      let newItem = getCart()[i];
+      if(Object.keys(newItem).toString() === item) {
+        cart.splice(cart.indexOf(newItem));
+        // found = true;
 
-
-
-  for(var i = 0; i < cart.length; i = i + 1){
-    // console.log(cart.indexOf(getCart()[i][item]));
-    let newItem = getCart()[i];
-    if(Object.keys(newItem).toString() === item) {
-      cart.splice(cart.indexOf(newItem));
-      // found = true;
-
+      }
     }
+    return console.log(cart);
+
   }
 
 
 
 
-  return console.log(cart);
+
+
+
+
+
+
 }
 
 function placeOrder(cardNumber) {
