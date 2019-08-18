@@ -84,17 +84,17 @@ function removeFromCart(item) {
   // // console.log('Test', Object.keys(array));
   //
   const array = Object.assign(cart);
-  // for(var j = 0; j < array.length; j = j + 1){
-  //    if(item === Object.keys(array[j]).toString()) {
-  //      console.log('item available');
-  //      found = true;
-  //    }
-  // }
-  // if(found !==true) {
-  //   return console.log('That item is not in your cart.');
-  // }
+  for(var j = 0; j < array.length; j = j + 1){
+     if(item === Object.keys(array[j]).toString()) {
+       console.log('item available');
+       found = true;
+     }
+  }
+  if(found !==true) {
+    return console.log('That item is not in your cart.');
+  }
 
-  console.log(array[item])
+
 
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
