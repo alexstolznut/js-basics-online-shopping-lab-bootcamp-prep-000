@@ -80,7 +80,7 @@ function total() {
 
 
 function removeFromCart(item) {
-  console.log(Object.keys(getCart()[0]));
+  console.log(Object.keys(getCart()[item]));
 
 
 
