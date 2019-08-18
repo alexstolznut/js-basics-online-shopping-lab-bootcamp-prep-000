@@ -84,9 +84,9 @@ function removeFromCart(item) {
   for(var i = 0; i < cart.length; i = i + 1){
     let newItem = getCart()[i];
     console.log(Object.keys(newItem).toString(), item);
-    if(Object.keys(newItem) === item) {
+    if(Object.keys(newItem).toString() === item) {
 
-      console.log(newItem);
+      console.log(cart.indexOf(newItem));
     }
   }
 
