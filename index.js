@@ -82,7 +82,7 @@ function total() {
 function removeFromCart(item) {
   let found = false;
   for(var i = 0; i < cart.length; i = i + 1){
-    console.log('test', Object.keys(getCart()[i][item]));
+    console.log('test',getCart()[i][item]);
     let newItem = getCart()[i];
     console.log(Object.keys(newItem).toString(), item);
     if(Object.keys(newItem).toString() === item) {
