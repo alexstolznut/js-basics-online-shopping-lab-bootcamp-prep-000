@@ -82,7 +82,7 @@ function total() {
 function removeFromCart(item) {
   const index = cart.indexOf(item)
   cart.splice(index);
-  return getCart();
+  return console.log(getCart());
 }
 
 function placeOrder(cardNumber) {
