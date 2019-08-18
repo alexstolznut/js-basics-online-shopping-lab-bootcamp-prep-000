@@ -80,11 +80,7 @@ function total() {
 
 
 function removeFromCart(item) {
-  console.log(cart.join());
-  const array = Object.assign(cart);
-  for(var j = 0; j < array.length; j = j + 1){
-     console.log(array[j][item]);
-  }
+  console.log(getCart[0][0]);
 
 
 
