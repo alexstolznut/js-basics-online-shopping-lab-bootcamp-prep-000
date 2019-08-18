@@ -72,7 +72,7 @@ function viewCart() {
 function total() {
   // write your code here
   let total = 0;
-  for(var i = 0; i < cart.length; i = i + 1) {
+  for(var i = 0; i < cart.length - 1; i = i + 1) {
     total += parseInt(Object.values(getCart[i]));
   }
   return console.log(total);
