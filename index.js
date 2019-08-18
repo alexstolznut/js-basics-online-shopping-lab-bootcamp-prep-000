@@ -95,7 +95,7 @@ function removeFromCart(item) {
   // }
 
   const object =Object.assign(cart);
-  console.log('object', getCart()[0]);
+  console.log('object', getCart()[0][item]);
 
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
