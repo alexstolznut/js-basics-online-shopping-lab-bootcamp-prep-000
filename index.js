@@ -25,20 +25,20 @@ function viewCart() {
     return;
   } else {
     const object = Object.assign(cart);
-    if(cart.length === 1) {
+    if(object.length === 1) {
       const name = Object.keys(object[0]);
       const price = Object.values(object[0]);
       console.log(`In your cart, you have ${name} at $${price}.`);
       return;
     }
-    if(cart.length === 2) {
+    if(object.length === 2) {
       let string = 'In your cart, you have '
-      for(var i = 0; i < cart.length; i = i + 1){
+      for(var i = 0; i < object.length-1; i = i + 1){
         let name = Object.keys(object[i]);
         let price = Object.values(object[i])
         string+=`${name} at ${price}`;
       }
-      string += `, and ${Object.keys(object[cart.length])} at ${Object.values(object[cart.length])}.`
+      string += `, and ${Object.keys(object[cart.length-1])} at ${Object.values(object[cart.length-1])}.`
       console.log(string);
       return;
     }
@@ -62,11 +62,11 @@ function viewCart() {
 
 function total() {
   // write your code here
-  let total = 0;
-  for(var i = 0; i < cart.length; i = i + 1) {
-    total += parseInt(Object.values(getCart[i]));
-  }
-  return console.log(total);
+//   let total = 0;
+//   for(var i = 0; i < cart.length; i = i + 1) {
+//     total += parseInt(Object.values(getCart[i]));
+//   }
+//   return console.log(total);
 }
 
 
