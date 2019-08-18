@@ -91,22 +91,9 @@ function removeFromCart(item) {
     return console.log('That item is not in your cart.')
   } else {
 
-  cart.splice(cart.indexOf(item));
+  cart.splice(array.indexOf(item));
   return cart;
 }
-    // for(var i = 0; i < cart.length; i = i + 1){
-    //    // console.log(cart.indexOf(getCart()[i][item]));
-    //    let newItem = getCart()[i];
-    //    console.log(newItem[item]);
-    //    if(Object.keys(newItem).toString() === item) {
-    //      cart.splice(cart.indexOf(newItem));
-    //      // found = true;
-    //
-    //    }
-
-
-
-
 
 }
 
