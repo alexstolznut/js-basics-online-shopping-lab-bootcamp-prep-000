@@ -30,32 +30,23 @@ function viewCart() {
       const price = Object.values(object[0]);
       console.log(`In your cart, you have ${name} at $${price}.`);
       return;
-    } else if(cart.length === 2) {
-      // let string = 'In your cart, ';
-      // for (var i = 0; i < cart.length; i = i + 1){
-      //   let item = Object.keys(getCart()[i]);
-      //   let price = Object.values(getCart()[i]);
-      //   string += `you have ${item} at $${price}`;
-      //   if(i < cart.length - 1) {
-      //     string += ' and ';
-      //   }
-      // }
-      // string += '.'
-      // console.log(string);
+    }
+    if(cart.length === 2) {
       console.log(`In your cart, you have ${Object.keys(getCart()[0])} at ${Object.values(getCart()[0])} and ${Object.keys(getCart()[1])} at ${Object.values(getCart()[1])}.`)
       return;
-    } else {
-      let string = 'In your cart, ';
-      for(var i = 0; i < cart.length; i = i + 1){
-        string += `you have ${Object.keys(object[i])} at ${Object.values(object[i])}, `
-        if(i < cart.length  ) {
-          string += `and ${Object.keys(object[i])} at ${Object.values(object[i])}.`
-          break;
-        }
-      }
-        console.log(string);
-        return
     }
+    // } else {
+    //   let string = 'In your cart, ';
+    //   for(var i = 0; i < cart.length; i = i + 1){
+    //     string += `you have ${Object.keys(object[i])} at ${Object.values(object[i])}, `
+    //     if(i < cart.length  ) {
+    //       string += `and ${Object.keys(object[cart.length])} at ${Object.values(object[cart.length])}.`
+    //       break;
+    //     }
+    //   }
+    //     console.log(string);
+    //     return
+    // }
 
   }
   // write your code here
