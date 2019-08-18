@@ -100,7 +100,7 @@ function removeFromCart(item) {
       }
     }
     return console.log(cart);
-  
+
 
   }
 
