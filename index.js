@@ -91,7 +91,7 @@ function removeFromCart(item) {
     return console.log('That item is not in your cart.')
   } else {
     console.log(cart.indexOf(item));
-  cart.splice(array.indexOf(item));
+  cart.splice(array.indexOf(item,1));
   return cart;
 }
 
