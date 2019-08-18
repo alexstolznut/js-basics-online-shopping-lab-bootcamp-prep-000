@@ -104,7 +104,7 @@ function removeFromCart(item) {
 
 
 
-  return console.log(cart);
+  return getCart();
 
 }
 
