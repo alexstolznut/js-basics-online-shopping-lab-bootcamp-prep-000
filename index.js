@@ -33,12 +33,13 @@ function viewCart() {
     }
     if(object.length === 2) {
       let string = 'In your cart, you have '
+      let name = [];
+      let price = [];
       for(var i = 0; i < object.length-1; i = i + 1){
-        let name = Object.keys(object[i]);
-        let price = Object.values(object[i])
-        string+=`${name} at ${price}`;
+        name.push(Object.keys(object[i]));
+        name.push(Object.values(object[i]));
       }
-      string += `, and ${Object.keys(object[cart.length-1])} at ${Object.values(object[cart.length-1])}.`
+      string += `${name[0]} at $${price[0]}, and ${name[1]} at $${price[1]}`
       console.log(string);
       return;
     }
