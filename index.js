@@ -94,6 +94,9 @@ function removeFromCart(item) {
   //   return console.log('That item is not in your cart.');
   // }
 
+  const object =Object.assign(cart);
+  console.log('object', object);
+
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
     let newItem = getCart()[i];
