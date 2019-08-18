@@ -33,14 +33,11 @@ function viewCart() {
     }
     if(object.length === 2) {
       let string = 'In your cart, you have '
-      let name = [];
-      let price = [];
-      for(var i = 0; i < object.length; i = i + 1){
-        name.push(Object.keys(object[i]));
-        price.push(Object.values(object[i]));
-      }
-      string += `${name[0]} at $${price[0]}, and ${name[1]} at $${price[1]}.`
-      console.log(string);
+      const name1 = Object.keys(object[0]);
+      const name 2 = Object.keys(object[1]);
+      const price1 = Object.values(object[0]);
+      const price2 = Object.values(object[1]);
+      console.log(`In your cart, you have ${name1} at $${price1}, and ${name2} at $${price2}.`)
       return;
     }
     // } else {
