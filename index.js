@@ -85,7 +85,7 @@ function removeFromCart(item) {
   //
   const array = Object.assign(cart);
   for(var j = 0; j < array.length; j = j + 1){
-     if(item === Object.keys(array[j]).toString()) {
+     if(Object.keys(array[j][item]) {
        console.log('item available');
        found = true;
      }
@@ -99,7 +99,6 @@ function removeFromCart(item) {
   for(var i = 0; i < cart.length; i = i + 1){
     // console.log(cart.indexOf(getCart()[i][item]));
     let newItem = getCart()[i];
-    console.log(Object.keys(newItem).toString(), item);
     if(Object.keys(newItem).toString() === item) {
       cart.splice(cart.indexOf(newItem));
       // found = true;
