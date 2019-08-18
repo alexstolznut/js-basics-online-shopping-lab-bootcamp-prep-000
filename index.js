@@ -97,18 +97,16 @@ function removeFromCart(item) {
   const object =Object.assign(cart);
   console.log('object', object);
 
-  for(var i = 0; i < cart.length; i = i + 1){
-    // console.log(cart.indexOf(getCart()[i][item]));
-    let newItem = getCart()[i];
-    console.log(Object.keys(newItem).toString(), item);
-    if(Object.keys(newItem).toString() === item) {
-
-      console.log(cart.indexOf(newItem));
-      cart.splice(cart.indexOf(newItem));
-      // found = true;
-
-    }
-  }
+  // for(var i = 0; i < cart.length; i = i + 1){
+  //   // console.log(cart.indexOf(getCart()[i][item]));
+  //   let newItem = getCart()[i];
+  //   console.log(Object.keys(newItem).toString(), item);
+  //   if(Object.keys(newItem).toString() === item) {
+  //     cart.splice(cart.indexOf(newItem));
+  //     // found = true;
+  //
+  //   }
+  // }
 
 
 
