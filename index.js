@@ -101,7 +101,10 @@ function placeOrder(cardNumber) {
     return console.log("Sorry, we don't have a credit card on file for you.");
   }
   if(cardNumber){
-    const total = total();
+    let total = 0;
+    for(var i = 0; i < cart.length; i = i + 1) {
+      total += parseInt(Object.values(cart[i]));
+    }
     cart = [];
     return console.log(`Your total cost is $${total}, which will be charged to the card ${cardNumber}.`);
   }
@@ -115,3 +118,4 @@ addToCart('oranges');
 viewCart();
 total();
 removeFromCart('oranges');
+placeOrder(11111111);
