@@ -34,11 +34,11 @@ function viewCart() {
     if(cart.length === 2) {
       let string = 'In your cart, you have '
       for(var i = 0; i < cart.length - 1; i = i + 1){
-        let name = Object.keys(getCart()[i]);
-        let price = Object.values(getCart()[i])
+        let name = Object.keys(object[i]);
+        let price = Object.values(object[i])
         string+=`${name} at ${price}`;
       }
-      string += `, and ${Object.keys(getCart()[cart.length])} at ${Object.values(getCart()[cart.length])}.`
+      string += `, and ${Object.keys(object[cart.length])} at ${Object.values(object[cart.length])}.`
       console.log(string);
       return;
     }
