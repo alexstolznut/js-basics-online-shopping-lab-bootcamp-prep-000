@@ -35,11 +35,11 @@ function viewCart() {
       let string = 'In your cart, you have '
       let name = [];
       let price = [];
-      for(var i = 0; i < object.length-1; i = i + 1){
+      for(var i = 0; i < object.length; i = i + 1){
         name.push(Object.keys(object[i]));
         price.push(Object.values(object[i]));
       }
-      string += `${name[0]} at $${price[0]}, and ${name[1]} at $${price[1]}`
+      string += `${name[0]} at $${price[0]}, and ${name[1]} at $${price[1]}.`
       console.log(string);
       return;
     }
